@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktdetailseite - Grauer Hoodie</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+			
+		<!-- Rabatt-Schild -->
+		  <div id="discount-banner" class="discount-banner">
+		    <p>-30% Rabatt</p>
+		  </div>
+			
+    <!-- Navigationsleiste -->
+		<nav class="navbar">
+		    <ul class="nav-links">
+						<li><a href="#Home">
+								<img src="home-icon.jpg" alt="Home" />
+						</a></li>
+						<li><a href="#Menü">
+		            <img src="striche-icon.jpg" alt="Menü" />
+		        </a></li>
+						<li><a href="#Suche">
+								<img src="suche-icon.jpg" alt="Suche" />
+						</a></li>
+		    </ul>
+				<div class="navbar-content">
+							<div class="flashsale-nav"> 
+								<img src="flashsale.jpg" alt="Flashsale" />
+							</div>
+				      <div class="countdown" id="countdown"></div>
+				    </div>
+		    <div class="cart-icon">
+		            <img src="cart-icon.jpg" alt="Warenkorb" />
+								<span id="cart-counter">0</span>
+		    </div>
+				<div class="cart-popup" id="cart-popup">
+				    <div class="cart-popup-content">
+				        <img id="popup-product-image" src="VintageSweater.jpg" alt="Produktbild">
+				        <div class="popup-details">
+				            <p id="popup-product-name">UNISEX Hoodie</p>
+				            <p id="popup-product-size">Größe: M</p>
+				        </div>
+				    </div>
+				</div>
+		</nav>
+		
+ <div class="product-page">
+     <!-- Linke Spalte: Kleine Bilder -->
+		     <div class="main-image">
+		         <img src="VintageSweater.jpg" alt="Hoodie">
+		     </div>
+
+     <!-- Zentrierter Bereich: Produktdetails -->
+     <div class="product-details">
+         <h1>UNISEX Hoodie</h1>
+        <p class="price">
+            <span class="original-price">50,00 €</span>
+            <span id="discounted-price" class="discounted-price">35,00 €</span>
+        </p>
+				 <p class="info">inkl. MwSt.</p>
+         <p>Color: GREEN</p>
+         <div class="sizes">
+             <button class="size-btn" data-size="XXS">XXS</button>
+             <button class="size-btn" data-size="XS">XS</button>
+             <button class="size-btn" data-size="S">S</button>
+             <button class="size-btn" data-size="M">M</button>
+             <button class="size-btn" data-size="L">L</button>
+             <button class="size-btn" data-size="XL">XL</button>
+             <button class="size-btn" data-size="XXL">XXL</button>
+         </div>
+				 <!-- Verfügbarkeitsanzeige -->
+				 <p class="verfügbar"></p>
+         <button class="add-to-cart">IN DEN WARENKORB</button>
+         <button class="like">♡</button>
+				 <p class="cart-message"></p>
+        
+         <div class="versand">
+             <p>✓ Lieferbar in 3-4 Werktagen</p>
+             <p>✓ Versandkostenfreie Bestellung und Retoure</p>
+         </div>
+     </div>
+
+     <!-- Rechte Spalte: Hauptbild -->
+     
+    <div class="left-thumbnails">
+        <div class="thumbnail">
+            <img src="1.jpg" alt="Bild 1">
+        </div>
+        <div class="thumbnail">
+            <img src="2.jpg" alt="Bild 2">
+        </div>
+        <div class="thumbnail">
+            <img src="3.jpg" alt="Bild 3">
+        </div>
+        <div class="thumbnail">
+            <img src="4.jpg" alt="Bild 4">
+        </div>
+    </div>
+ </div>
+    <script src="script.js"></script>
+		<script src="Rabatt.js"></script>
+		<script src="script_countdown.js"></script>
+</body>
+</html>
